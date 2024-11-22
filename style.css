@@ -1,0 +1,679 @@
+@media screen and (max-width: 480px) {
+
+  .home {
+  
+    height: auto;
+    padding: 10px;
+  }
+  .about {
+    height: auto;
+  
+  }
+
+  .cards {
+    flex-wrap: wrap;
+    opacity: 0;
+    transform: translateY(80px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0px;
+    transition: opacity 1.8s ease, transform 1.8s ease;
+    padding: 20px;
+    width: 100%;
+  }
+  .pr1 {
+    flex-wrap: wrap;
+  }
+
+  .cartpr {
+    flex-wrap: wrap;
+    padding: 20%;
+  }
+
+  .tcartpro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+  }
+
+  .langugaePro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .projects {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    flex-direction: column;
+    padding: 20px;
+    width: 100%;
+  }
+  .cartsprojects {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 100px;
+    width: 100%;
+    padding: 20px;
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: auto;
+  background-color: #0f0f0f;
+}
+
+canvas {
+  position: fixed; /* Makes the canvas stay in the background */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* Pushes the canvas behind other elements */
+}
+.home.active {
+  opacity: 1;
+  transform: translateY(0px);
+}
+.home {
+  position: relative;
+  z-index: 1; /* Ensures content appears above the canvas */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  padding: 10px 0;
+  height: 100vh;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 1s ease, transform 2s ease;
+}
+
+.home .nav {
+  background-color: rgba(31, 31, 31, 0.352);
+  padding: 15px;
+  border-radius: 7px;
+  margin-bottom: 50px;
+  display: flex;
+}
+
+.nav button {
+  margin: 0px 15px;
+  text-decoration: none;
+  color: rgb(209, 207, 207);
+  font-size: 15px;
+  transition: 0.4s;
+  padding: 5px;
+  border-radius: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: transparent;
+  border: 1px solid transparent;
+  outline: 0;
+  cursor: pointer;
+}
+.nav button:hover {
+  background-color: rgba(75, 246, 72, 0.274);
+}
+
+.imghome img {
+  height: 70px;
+  width: 70px;
+}
+.typepage p {
+  font-family: Arial, Helvetica, sans-serif;
+  color: gainsboro;
+  font-size: 15px;
+}
+.titlehome h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 65px;
+  text-align: center;
+}
+.titlehome h1 .firsttitle {
+  color: rgb(255, 255, 255);
+}
+.titlehome h1 .secondtitle {
+  color: rgba(75, 246, 72, 0.59);
+}
+.descrebtionhome {
+  text-align: center;
+}
+
+.descrebtionhome p {
+  font-size: 15px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: gainsboro;
+}
+
+/* Section design part about me and language  working */
+
+.about {
+  position: relative;
+  z-index: 1; /* Ensures content appears above the canvas */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: auto;
+}
+.typepage2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.typepage2 i {
+  font-size: 65px;
+}
+.typepage2 p {
+  font-family: Arial, Helvetica, sans-serif;
+  color: gainsboro;
+  font-size: 15px;
+}
+.titleabout h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 65px;
+  text-align: center;
+}
+.titleabout {
+  transform: translateY(50px);
+  opacity: 0;
+  transition: opacity 1s ease, transform 1.8s ease;
+}
+.titleabout.active {
+  transform: translateY(0px);
+  opacity: 1;
+}
+.titleabout h1 .firsttitle {
+  color: rgb(255, 255, 255);
+}
+.titleabout h1 .secondtitle {
+  color: rgba(75, 246, 72, 0.59);
+}
+
+.cartabout {
+  background-color: rgba(114, 254, 112, 0.353);
+  padding: 10px;
+  border-radius: 10px;
+  width: 400px;
+  color: ghostwhite;
+  transform: scale(1.01);
+  transition: 0.4s;
+  cursor: pointer;
+  box-shadow: rgba(0, 240, 40, 0.15) 0px 4px 5px 2px,
+    rgba(68, 190, 100, 0.05) 0px 2px 3px 1px;
+}
+
+.cartabout:hover {
+  transform: scale(0.95);
+}
+
+.cartabout p {
+  font-family: "Lora", serif;
+  font-size: 1.1rem;
+  color: #ffffff;
+}
+.cartabout h2 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  color: #f6f6f6;
+}
+.cartabout i {
+  margin: 10px;
+}
+.cards {
+  opacity: 0;
+  transform: translateY(80px);
+  display: flex;
+  justify-content: space-between;
+  gap: 150px;
+  transition: opacity 1.8s ease, transform 1.8s ease;
+}
+
+.cards.active {
+  opacity: 1;
+  transform: translateY(0px);
+}
+.languageWorking {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 50px;
+  margin-top: 100px;
+}
+.lang {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  transform: scale(1.1);
+  transition: 0.4s;
+  cursor: pointer;
+}
+.lang:hover {
+  transform: scale(1.01);
+}
+.lang p {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #ffffff;
+}
+.lagauage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.lagauage h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgba(114, 254, 112, 0.353);
+}
+
+.pr1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+.pr1 i {
+  font-size: 60px;
+  color: #ffffff;
+}
+
+#ln1 {
+  opacity: 0;
+  transform: translateX(120px);
+  transition: transform 4s ease, opacity 4s ease;
+}
+#ln2 {
+  opacity: 0;
+  transform: translateX(-120px);
+  transition: transform 4s ease, opacity 4s ease;
+}
+#ln1.active,
+#ln2.active {
+  opacity: 1;
+  transform: translateX(0);
+}
+.titleabout2 h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 65px;
+  text-align: center;
+}
+.titleabout2 {
+  opacity: 0;
+  transform: translateY(120px);
+  transition: transform 2s ease, opacity 2s ease;
+}
+.titleabout2.active {
+  transform: translateY(0);
+  opacity: 1;
+}
+.titleabout2 h1 .firsttitle2 {
+  color: rgb(255, 255, 255);
+}
+.titleabout2 h1 .secondtitle2 {
+  color: rgba(75, 246, 72, 0.59);
+}
+
+/* Section design part project and comment from peaple*/
+
+.projects {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+  flex-direction: column;
+  padding: 20px;
+}
+.cartsprojects {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 100px;
+}
+.typepage2 i {
+  font-size: 65px;
+}
+.typepage2 p {
+  font-family: Arial, Helvetica, sans-serif;
+  color: gainsboro;
+  font-size: 15px;
+}
+.titlepro h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 65px;
+  text-align: center;
+}
+.titlepro {
+  transform: translateY(50px);
+  opacity: 0;
+  transition: opacity 1s ease, transform 1.8s ease;
+}
+.titlepro.active {
+  transform: translateY(0px);
+  opacity: 1;
+}
+.titlepro h1 .firsttitlepro {
+  color: rgb(255, 255, 255);
+}
+.titlepro h1 .secondtitlepro {
+  color: rgba(75, 246, 72, 0.59);
+}
+
+.cartpr {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 130px;
+  color: white;
+  /*border: 1px solid rgba(172, 255, 47, 0.368);*/
+  padding: 50px;
+  backdrop-filter: blur(5px);
+  cursor: pointer;
+  box-shadow: rgba(172, 255, 47, 0.584) 0px 1px 3px 0px,
+    rgba(23, 34, 5, 0.221) 0px 0px 0px 1px;
+}
+.numbres {
+  font-size: 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+h2 .tcartpro1,
+.tcartpro2 {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.tcartpro .tcartpro1 {
+  color: green;
+}
+.tcartpro .langugaePro {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 15px;
+}
+
+.langugaePro p {
+  border: 1px solid green;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 300;
+}
+.openSite a {
+  text-decoration: none;
+  color: #f6f6f6;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.openSite {
+  padding: 3px 10px;
+  background-color: green;
+
+  border-radius: 0px 8px 0px 8px;
+  border: 1px solid transparent;
+  outline: 0;
+  font-weight: 300;
+  cursor: pointer;
+}
+.imgProject img {
+  width: 450px;
+  height: 250px;
+  opacity: 0.7;
+  border-radius: 15px;
+  transform: scale(0.99) rotate3d(0, 0, 0, 0deg);
+  transition: transform 1s ease, opacity 1s ease;
+}
+
+.cartpr:hover .imgProject img {
+  opacity: 3;
+  transform: scale(1.3) rotate3d(1, 1, 2, 15deg);
+  border-radius: 15px;
+}
+
+.scrollMenu {
+  opacity: 0;
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+
+  width: auto;
+  z-index: 1000;
+  width: 5%;
+  transition: opacity 0.4s ease, 1s ease;
+}
+
+.scrollMenu.active {
+  opacity: 1;
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+
+  width: auto;
+  z-index: 1000;
+  width: 5%;
+}
+
+.scrollMenu .navscroll {
+  background-color: rgba(31, 31, 31, 0.352);
+  padding: 15px;
+  border-radius: 7px;
+  margin-bottom: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: auto;
+  gap: 25px;
+  z-index: 1000;
+}
+
+.navscroll button {
+  margin: 0px 15px;
+  text-decoration: none;
+  color: rgb(209, 207, 207);
+  font-size: 15px;
+  transition: 0.4s;
+  padding: 5px;
+  border-radius: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: transparent;
+  border: 1px solid transparent;
+  outline: 0;
+  cursor: pointer;
+}
+.navscroll button i {
+  font-size: 25px;
+}
+.navscroll button:hover {
+  background-color: rgba(75, 246, 72, 0.274);
+}
+
+.Cantacts {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+  flex-direction: column;
+  padding: 20px;
+}
+.cartsprojects {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 100px;
+}
+.typepage3 i {
+  font-size: 65px;
+}
+.typepage3 p {
+  font-family: Arial, Helvetica, sans-serif;
+  color: gainsboro;
+  font-size: 15px;
+}
+.titlecantact h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 65px;
+  text-align: center;
+}
+.titlecantact {
+  transform: translateY(50px);
+  opacity: 0;
+  transition: opacity 1s ease, transform 1.8s ease;
+}
+.titlecantact.active {
+  transform: translateY(0px);
+  opacity: 1;
+}
+.titlecantact h1 .firsttitlepro {
+  color: rgb(255, 255, 255);
+}
+.titlecantact h1 .secondtitlepro {
+  color: rgba(75, 246, 72, 0.59);
+}
+
+form {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 25px;
+  backdrop-filter: blur(5px);
+  border: 1px solid green;
+  padding: 30px;
+  width: 50%;
+  box-shadow: rgba(1, 95, 1, 0.17) 0px 7px 19px 0px;
+}
+
+form input {
+  width: 100%;
+  height: 40px;
+  background-color: transparent;
+  border: 1px solid rgba(0, 128, 0, 0.215);
+  outline: 0;
+  color: gainsboro;
+}
+form input::placeholder {
+  padding: 0px 15px;
+}
+form label {
+  font-family: Arial, Helvetica, sans-serif;
+  color: gainsboro;
+  font-weight: 500;
+  margin-bottom: -10px;
+}
+.message {
+  width: 100%;
+  background-color: transparent;
+  border: 1px solid rgba(0, 128, 0, 0.215);
+  outline: 0;
+  color: gainsboro;
+  height: 120px;
+}
+.message::placeholder {
+  padding: 25px;
+}
+
+form .btnsend {
+  padding: 7px 10px;
+  background-color: green;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  outline: 0;
+  border: 1px solid transparent;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.titlesocialmedia h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 65px;
+  text-align: center;
+}
+.titlesocialmedia {
+  transform: translateY(30px);
+  opacity: 0;
+  transition: opacity 1s ease, transform 1.8s ease;
+}
+.titlesocialmedia.active {
+  transform: translateY(0px);
+  opacity: 1;
+}
+.titlesocialmedia h1 .firsttitlepro {
+  color: rgb(255, 255, 255);
+}
+.titlesocialmedia h1 .secondtitlepro {
+  color: rgba(75, 246, 72, 0.59);
+}
+
+.contactbysocial {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.contactbysocial .linkssocial {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.contactbysocial .linkssocial i {
+  font-size: 60px;
+  color: whitesmoke;
+  transform: scale(0.8);
+  transition: 0.4s ease, transform 0.4s ease;
+  cursor: pointer;
+}
+
+.contactbysocial .linkssocial i:hover {
+  color: green;
+  transform: scale(1.1);
+}
+
+.thanksuser {
+  opacity: 0;
+  transform: translateX(-200px);
+  transform: translateX(-50%);
+  transition: opacity 1s ease, transform 1s ease;
+  margin-top: 60px;
+  backdrop-filter: blur(5px);
+  border: 1px solid rgba(0, 128, 0, 0.155);
+  box-shadow: green 0px 1px 4px;
+  padding: 20px;
+  border-radius: 10px;
+}
+.thanksuser.active {
+  opacity: 1;
+  transform: translateX(0px);
+  transform: translateX(0%);
+}
+.thanksuser h2 {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.thanksuser p {
+  font-family: "Roboto", "Open Sans", "Arial", sans-serif;
+  color: rgba(253, 253, 253, 0.603);
+}
