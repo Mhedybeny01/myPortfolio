@@ -141,7 +141,6 @@ window.addEventListener("scroll", () => {
     thanksuser.classList.remove("active");
   }
 
-
   console.log(window.scrollY);
 });
 

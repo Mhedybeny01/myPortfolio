@@ -1,86 +1,40 @@
-@media screen and (max-width: 480px) {
-
-  .home {
-    height: auto;
-   
+@media (max-width: 768px) {
+  .cartpr {
+    flex-direction: column;
+    gap: 20px;
   }
-  .about {
-    height: auto;
-  
-  }
-   .cartabout{
-    width: 100%;
-   }
-  .cards {
-    flex-wrap: wrap;
-    opacity: 0;
-    transform: translateY(80px);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 0px;
-    transition: opacity 1.8s ease, transform 1.8s ease;
-    padding: 20px;
-    width: 100%;
+  .cartsprojects {
+    padding: 30px;
   }
   .pr1 {
     flex-wrap: wrap;
   }
-
-  .cartpr {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+  .cards {
     flex-wrap: wrap;
-    width: 100%;
-  
+  }
+  .about {
+    padding: 30px;
+  }
+  h1 {
+    font-size: calc(1.5rem + 2vw); /* Adjust dynamically */
   }
 
-  .tcartpro {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    width: auto;
+  p {
+    font-size: calc(0.8rem + 0.5vw);
   }
+  img {
+    max-width: 100%;
+    height: auto;
+}
+}
 
-  .langugaePro {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .projects{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+@media (max-width: 1024px) {
+  .cards {
     gap: 50px;
-    flex-direction: column;
-    padding: 20px;
-    width: 100%;
   }
-  .cartsprojects {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    gap: 50px;
-    width: 100%;
-    
+  .home .nav {
+    flex-wrap: wrap;
   }
-
-  .imgProject img {
-      display: flex;
- 
-}
-form{
-   width: 100%;
-}
-
-.Cantacts{
-  padding: 30px;
-}
 }
 
 body {
@@ -110,7 +64,7 @@ canvas {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-
+  width: 100%;
   padding: 10px 0;
   height: 100vh;
   opacity: 0;
@@ -184,6 +138,7 @@ canvas {
   justify-content: center;
   flex-direction: column;
   height: auto;
+  width: 100%;
 }
 .typepage2 {
   display: flex;
@@ -448,7 +403,7 @@ h2 .tcartpro1,
   cursor: pointer;
 }
 .imgProject img {
-  width: 100%;
+  width: auto;
   height: 250px;
   opacity: 0.7;
   border-radius: 15px;
@@ -527,6 +482,7 @@ h2 .tcartpro1,
   gap: 50px;
   flex-direction: column;
   padding: 20px;
+  
 }
 .cartsprojects {
   display: flex;
@@ -574,7 +530,7 @@ form {
   backdrop-filter: blur(5px);
   border: 1px solid green;
   padding: 30px;
-  width: 50%;
+  width: 80%;
   box-shadow: rgba(1, 95, 1, 0.17) 0px 7px 19px 0px;
 }
 
